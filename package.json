@@ -1,0 +1,19 @@
+{
+  "name": "teotl-consultores",
+  "version": "1.0.0",
+  "description": "Clone-edicion de página web Teotl-Consultores",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazr03/webpackTeotl.git"
+  },
+  "author": "Iván César Bazaldúa Rdz.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bazr03/webpackTeotl/issues"
+  },
+  "homepage": "https://github.com/bazr03/webpackTeotl#readme"
+}
