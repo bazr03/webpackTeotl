@@ -1,0 +1,56 @@
+@import "variables";
+body
+{
+    background-color: map-get($colors , bodyBg );
+    height: 3200px;
+}
+img{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+.container{
+    width: 80%;
+    margin: 90px auto;
+}
+.header{
+    width: 80%;  
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:100;
+    transition: all 1s ease-in-out;
+    .header-Wrapper{
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        margin:0;
+        .header-logo{
+            width: 60px;
+            height: 60px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            a{
+                text-decoration: none;
+                color:white;
+                margin: 10px 15px;
+                text-transform: uppercase;
+                transition: color 0.3s ease-in-out;
+                &:hover{
+                    color:map-get($colors , main );
+                    border-bottom: 2px solid map-get($colors , main );
+                }
+            }
+        }
+    }
+}
+
+.spacer {
+    flex-grow: 1;
+}
