@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server -d",
-    "build": "rimraf build && webpack -p", 
-    "dev" : "rimraf dist && webpack -d"
+    "build": "rimraf build && webpack -p",
+    "dev": "rimraf dist && webpack -d"
   },
   "repository": {
     "type": "git",
