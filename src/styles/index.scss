@@ -20,4 +20,16 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.herro-home__title {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 50%;
+  h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
 }

@@ -79,42 +79,64 @@ img {
 footer {
   display: grid;
   color: white;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, auto-fit);
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto-fit);
   grid-gap: 10px;
   grid-template-areas:
-    ". logo logo logo logo ."
-    ". slgn slgn slgn slgn ."
-    ". cto cto cto cto ."
-    ". info info info info ."
-    ". scl scl scl scl ."
-    "rghs rghs rghs rghs rghs rghs  ";
+    " logo "
+    " cto "
+    " rghs";
   justify-items: center;
   align-items: center;
   background-color: #0c0c0c;
   @include media-min-width(map-get($devices, laptop)) {
-    grid-template-rows: repeat(2, auto) 70px 90px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 90px;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px 20px;
     grid-template-areas:
-      "logo logo cto cto serv serv"
-      "slgn slgn info info lst lst"
-      "slgn slgn scl scl lst lst"
-      "rghs rghs rghs rghs rghs rghs ";
+      "logo cto lst lst"
+      "rghs rghs rghs rghs";
   }
   h5 {
     font-size: 2rem;
     color: map-get($colors, main);
   }
 }
-.footer-logo {
+.footer-left {
+  width: 100%;
   grid-area: logo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-center {
+  grid-area: cto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer-right {
+  display: none;
+  @include media-min-width(map-get($devices, laptop)) {
+    grid-area: lst;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+.footer-logo {
   width: 90px;
   height: 90px;
   margin: 20px;
 }
 .footer-slogan {
-  grid-area: slgn;
   text-transform: uppercase;
   line-height: 30px;
   letter-spacing: 3px;
@@ -132,26 +154,21 @@ footer {
     }
   }
 }
-.footer-contactanos {
-  grid-area: cto;
-  align-self: end;
-}
-.footer-info {
-  grid-area: info;
-  align-self: start;
 
+.footer-info {
   p {
     display: block;
     text-align: center;
     line-height: 25px;
     letter-spacing: 2px;
+    margin: 1.5rem 0;
   }
 }
 .footer-social {
-  grid-area: scl;
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   a {
     margin: 5px;
     font-size: 30px;
@@ -171,19 +188,16 @@ footer {
 }
 
 .footer-servicios-titulo {
-  display: none;
   @include media-min-width(map-get($devices, laptop)) {
     display: block;
     grid-area: serv;
   }
 }
 .footer-servicios-lista {
-  display: none;
   @include media-min-width(map-get($devices, laptop)) {
     margin: 25px;
     padding: 0;
     display: grid;
-    grid-area: lst;
     grid-gap: 15px;
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
