@@ -1,20 +1,35 @@
 @import "variables";
-.hero-home{
-    background-image: url("/static/panorama-Monterrey-NL-OPT.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.hero-home {
+  background-image: url("/static/panorama-Monterrey-NL-OPT.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  @include media-min-width(map-get($devices, tablet)) {
     height: 80vh;
-    width: 100%;
-    @include media-min-width(map-get($devices, laptopL)){
-        width: 80%;
-        margin:0 auto;
-        box-shadow: 0px 4px 5px  rgba(0,0,00,0.2);
-    }
+  }
+  @include media-min-width(map-get($devices, laptopL)) {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0px 4px 5px rgba(0, 0, 00, 0.2);
+  }
 }
-.backdrop{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.herro-home__title {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 50%;
+  h1 {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+  }
 }
