@@ -1,75 +1,74 @@
 @import "variables";
-body
-{
-    background-color: map-get($colors , bodyBg );
-    height: 3200px;
+body {
+  background-color: map-get($colors, bodyBg);
+  height: 3200px;
+  background-color: red;
 }
-img{
-    max-width: 100%;
-    display: block;
-    height: auto;
-    transition: all 0.3s ease-in-out;
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  transition: all 0.3s ease-in-out;
 }
-.container{
+.container {
+  width: 80%;
+  margin: 90px auto;
+}
+.header {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+  @include media-min-width(map-get($devices, laptopL)) {
     width: 80%;
-    margin: 90px auto;
-}
-.header{
-    width: 100%;  
-    height: 90px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:100;
-    transition: all 1s ease-in-out;
-    @include media-min-width(map-get($devices, laptopL)){
-        width: 80%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .header-Wrapper{
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        margin:0;
-        
-    }
-}
-.nav-main__desktop{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .header-Wrapper {
+    padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin: 0;
+  }
 }
-.nav-main__desktop__item{
-    text-decoration: none;
-                color:white;
-                font-weight: bold;
-                border-radius: 10px;
-                padding: 10px 15px;
-                text-transform: uppercase;
-                transition: color 0.3s ease-in-out;
-                &:hover{
-                    background-color: map-get($colors , main );
-                }
+.nav-main__desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.nav-main__desktop__item-scrolled{
-    color:black;
+.nav-main__desktop__item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+  &:hover {
+    background-color: map-get($colors, main);
+  }
+}
+.nav-main__desktop__item-scrolled {
+  color: black;
 }
 .spacer {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-.header-scrolled{
-    background-color: white;
-    height: 70px;
+.header-scrolled {
+  background-color: white;
+  height: 70px;
 }
-.header-logo{
-    width: 80px;
-    height: 80px;
-    margin-left: 30px;
+.header-logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 30px;
 }
-.headerImg-scrolled{
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+.headerImg-scrolled {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
 }
