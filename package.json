@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bazr03/webpackTeotl#readme",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "ejs": "^2.7.1",
     "normalize.css": "^8.0.1",
     "rimraf": "^3.0.0"

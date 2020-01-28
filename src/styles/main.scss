@@ -12,7 +12,8 @@ img {
   transition: all 0.3s ease-in-out;
 }
 .container {
-  width: 80%;
+  max-width: 1920px;
+  width: 100%;
   margin: 90px auto;
 }
 .header {
@@ -79,6 +80,7 @@ img {
 footer {
   display: grid;
   color: white;
+  padding: 1rem;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, auto-fit);
   grid-gap: 10px;
@@ -132,8 +134,7 @@ footer {
   }
 }
 .footer-logo {
-  width: 90px;
-  height: 90px;
+  width: 200px;
   margin: 20px;
 }
 .footer-slogan {

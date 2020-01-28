@@ -10,6 +10,7 @@ import "../styles/index.scss";
  CUANDO SE LANZE A PRODUCIION 
 */
 import "../static/iconoTeotl.png";
+import "../static/LOGO-TEOTL.png";
 import "../static/panorama-Monterrey-NL-OPT.jpg";
 
 /*--------------------------

@@ -24,12 +24,68 @@
 }
 .herro-home__title {
   position: absolute;
-  top: 40%;
-  left: 5%;
-  width: 50%;
+  top: 20%;
+  left: 2%;
+  width: 80%;
+  @include media-min-width(map-get($devices, tablet)) {
+    top: 30%;
+    left: 5%;
+    width: 60%;
+  }
   h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 1.8rem;
     letter-spacing: 3px;
+    @include media-min-width(map-get($devices, tablet)) {
+      font-size: 2.5rem;
+    }
+  }
+  p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 30px;
+    letter-spacing: 2.5px;
+    text-align: justify;
+    @include media-min-width(map-get($devices, tablet)) {
+      font-size: 1.2rem;
+      line-height: 35px;
+    }
+  }
+}
+
+.hero-home__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 70%;
+  background-color: rgba(248, 177, 55, 0.8);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  span {
+    color: white;
+    letter-spacing: 3px;
+  }
+}
+
+.hero-home__cotiza {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: rgba(255, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 1.3rem;
+  }
+  span {
+    color: white;
+    padding: 1rem;
   }
 }
