@@ -1,8 +1,8 @@
 const path = require("path");
 /* Estilos*/
 require("normalize.css");
-import "../styles/main.scss";
-import "../styles/index.scss";
+import "../../node_modules/materialize-css/dist/js/materialize.min.js";
+import "../styles/custom.scss";
 
 /* Imagenes*/
 /*
@@ -19,16 +19,17 @@ import "../static/panorama-Monterrey-NL-OPT.jpg";
 
 /*--------------------------
 ------- SELECTORES ----------
-----------------------------*/
+----------------------------
 const heroHome = document.querySelector(".hero-home");
 const header = document.querySelector(".header");
 const heroImage = document.querySelector(".header-logo");
 const mainNavLinks = document.querySelectorAll(".nav-main__desktop a");
 let mainNavLinksArr = Array.from(mainNavLinks);
+*/
 
 /*--------------------------
 ------- OBSERVADORES ----------
-----------------------------*/
+----------------------------
 observadores();
 
 function observadores() {
@@ -61,13 +62,13 @@ function observadores() {
   heroObserver.observe(heroHome);
 }
 
-/*-------------------------------
-------- eventListeners ----------
----------------------------------*/
-//eventListeners();
+*/
+document.addEventListener("DOMContentLoaded", function() {
+  var elems = document.querySelectorAll(".parallax");
+  var instances = M.Parallax.init(elems);
+});
 
-function eventListeners() {
-  window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-  });
-}
+// document.addEventListener("DOMContentLoaded", function() {
+//   var elems = document.querySelectorAll(".carousel");
+//   var instances = M.Carousel.init(elems);
+// });

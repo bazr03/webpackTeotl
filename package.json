@@ -20,8 +20,7 @@
   },
   "homepage": "https://github.com/bazr03/webpackTeotl#readme",
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "ejs": "^2.7.1",
+    "materialize-css": "^1.0.0-rc.2",
     "normalize.css": "^8.0.1",
     "rimraf": "^3.0.0"
   },
@@ -33,8 +32,6 @@
     "autoprefixer": "^9.7.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
-    "ejs-loader": "^0.3.5",
-    "ejs-webpack-loader": "^2.2.2",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.8.0",
