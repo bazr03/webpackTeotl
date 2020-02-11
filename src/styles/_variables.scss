@@ -4,9 +4,14 @@
   }
 }
 
+$widths: (
+  bodyMaxWidth: 1600px
+);
 $colors: (
   bodyBg: #161515,
-  main: #f8b137
+  main: #f8b137,
+  primary: #f78034,
+  secondary: #f60f3e
 );
 
 $devices: (

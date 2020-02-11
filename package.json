@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/bazr03/webpackTeotl#readme",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2",
+    "bootstrap": "4.4.1",
+    "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1",
     "rimraf": "^3.0.0"
   },
   "devDependencies": {

@@ -2,6 +2,10 @@ const path = require("path");
 /* Estilos*/
 require("normalize.css");
 //import "../../node_modules/materialize-css/dist/js/materialize.min.js";
+import "../../node_modules/popper/dist/popper.min.js";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/js/dist/index";
+import "bootstrap/scss/bootstrap.scss";
 import "../styles/main.scss";
 import "../styles/index.scss";
 //import "../styles/custom.scss";
@@ -62,13 +66,3 @@ function observadores() {
 
   heroObserver.observe(heroHome);
 }
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   var elems = document.querySelectorAll(".parallax");
-//   var instances = M.Parallax.init(elems);
-// });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   var elems = document.querySelectorAll(".carousel");
-//   var instances = M.Carousel.init(elems);
-// });

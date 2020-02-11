@@ -1,37 +1,40 @@
 @import "variables";
+/* -------------------------------
+-------Hero Home ----------------
+*/
 .hero-home {
   background-image: url("/static/panorama-Monterrey-NL-OPT.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: 0 -2cm;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 700px;
   width: 100%;
-  @include media-min-width(map-get($devices, tablet)) {
-    height: 80vh;
-  }
+  box-shadow: 0px 4px 15px 8px rgba(0, 0, 00, 0.3);
+  max-width: map-get($widths, bodyMaxWidth);
   @include media-min-width(map-get($devices, laptopL)) {
     width: 80%;
     margin: 0 auto;
-    box-shadow: 0px 4px 5px rgba(0, 0, 00, 0.2);
   }
 }
-.backdrop {
+.backdropHome {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr) 70px 70px;
+  grid-template-areas:
+    ". . . . . ."
+    ". hht hht hht hht ."
+    ". hht hht hht hht ."
+    ". hht hht hht hht ."
+    "hhi hhi hhi hhi hhi hhi"
+    "hhc hhc hhc hhc hhc hhc";
 }
-.herro-home__title {
-  position: absolute;
-  top: 20%;
-  left: 2%;
-  width: 80%;
-  @include media-min-width(map-get($devices, tablet)) {
-    top: 30%;
-    left: 5%;
-    width: 60%;
-  }
+.heroHome__title {
+  grid-area: hht;
+
   h1 {
     color: white;
     font-size: 1.8rem;
@@ -52,13 +55,35 @@
     }
   }
 }
-
-.hero-home__info {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 70%;
-  background-color: rgba(248, 177, 55, 0.8);
+@media (min-width: 950px) {
+  .backdropHome {
+    grid-template-areas:
+      ". . . . . ."
+      ". hht hht hht hht ."
+      ". hht hht hht hht ."
+      ". hht hht hht hht ."
+      ". . . . hhc hhc"
+      "hhi hhi hhi hhi hhc hhc";
+  }
+  .heroHome__cotiza {
+    flex-direction: column;
+    p {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      letter-spacing: 3px;
+      text-shadow: 2px 2px 2px #000;
+      font-weight: bold;
+    }
+    span {
+      letter-spacing: 2px;
+    }
+  }
+}
+.heroHome__info {
+  grid-area: hhi;
+  background-color: rgba(248, 177, 55, 0.5);
   padding: 1rem 0;
   display: flex;
   justify-content: space-around;
@@ -70,12 +95,9 @@
   }
 }
 
-.hero-home__cotiza {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 30%;
-  background-color: rgba(255, 0, 0, 0.8);
+.heroHome__cotiza {
+  grid-area: hhc;
+  background-color: rgba(255, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
