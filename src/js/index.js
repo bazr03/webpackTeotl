@@ -2,10 +2,7 @@ const path = require("path");
 /* Estilos*/
 require("normalize.css");
 //import "../../node_modules/materialize-css/dist/js/materialize.min.js";
-import "../../node_modules/popper/dist/popper.min.js";
-import "jquery/dist/jquery.min.js";
-import "bootstrap/js/dist/index";
-import "bootstrap/scss/bootstrap.scss";
+import "bootstrap";
 import "../styles/main.scss";
 import "../styles/index.scss";
 //import "../styles/custom.scss";

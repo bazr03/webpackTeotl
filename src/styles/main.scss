@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap";
 @import "variables";
 body {
   background-color: map-get($colors, bodyBg);
@@ -36,6 +37,7 @@ h1 {
   @include media-min-width(map-get($devices, laptopL)) {
     width: 80%;
     left: 50%;
+    max-width: map-get($widths, bodyMaxWidth);
     transform: translateX(-50%);
   }
   .header-Wrapper {
@@ -68,7 +70,28 @@ h1 {
 .spacer {
   flex-grow: 1;
 }
+.toggle-button {
+  display: none;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
 
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
 .header-scrolled {
   background-color: white;
   height: 70px;
@@ -83,9 +106,21 @@ h1 {
   height: 50px;
   padding: 5px;
 }
-.backdrop {
+.backdropHome {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
+}
+.backdrop {
+  display: none;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms linear;
 }
