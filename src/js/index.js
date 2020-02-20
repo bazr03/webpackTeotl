@@ -3,7 +3,7 @@ const path = require("path");
 require("normalize.css");
 //import "../../node_modules/materialize-css/dist/js/materialize.min.js";
 import "bootstrap";
-import "../styles/main.scss";
+import "../styles/shared.scss";
 import "../styles/index.scss";
 //import "../styles/custom.scss";
 
@@ -15,6 +15,8 @@ import "../styles/index.scss";
 import "../static/iconoTeotl.png";
 import "../static/LOGO-TEOTL.png";
 import "../static/panorama-Monterrey-NL-OPT.jpg";
+require('svg-url-loader!../static/Isotipo-blanco-teotl-SemiTransparent17.svg');
+require('svg-url-loader!../static/Caracol-gris-teotl.svg');
 
 /*--------------------------
 ------- Codigo JS ----------
