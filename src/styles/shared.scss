@@ -1,9 +1,17 @@
+$theme-colors: (
+  "primary": #F8B137,
+  "secondary": #F60F3E
+);
+
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto|Rubik:400,700&display=swap');
 @import "variables";
 body {
   background-color: map-get($colors, bodyBg);
   height: 3200px;
   color:white;
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -13,8 +21,28 @@ img {
 }
 h1 {
   text-shadow: 1px 1px 1px #000;
-  font-weight: bold;
+  font-family: 'rubik', sans-serif;
 }
+h2,
+.h2{
+font-size: 2.2rem;
+font-weight: bold;
+line-height: 45px;
+padding: 2rem 0;
+}
+h2,
+h3,
+h4,
+h5{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+h6{
+  font-family: 'Roboto', sans-serif;
+}
+
 .container {
   width: 80%;
   margin: 90px auto;
@@ -22,10 +50,20 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  background-color: #161515;
+  // background-color: #161515;
   grid-gap: 50px;
   align-items: center;
   justify-items: center;
+}
+.open {
+  display: block!important;
+  /* Solo usar important en casos especiales como este,
+  ya que si no se agrega, este display es sobre escito
+  por display none, debido a que al erchivo css donde se
+  especifica display none, viene segundo en la ista de link, 
+  por lo tanto sobreescribe */
+  opacity: 1!important;
+  transform: translateY(0)!important;
 }
 .header {
   width: 100%;
@@ -33,9 +71,9 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: map-get($zindexes , main-nav );
   transition: all 1s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   @include media-min-width(map-get($devices, laptopL)) {
     width: 80%;
     left: 50%;
@@ -50,39 +88,49 @@ h1 {
   }
 }
 .nav-main__desktop {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
+  @include media-min-width(map-get($devices, tablet)) {
+    display: flex;
+  }
 }
 .nav-main__desktop__item {
   text-decoration: none;
-  color: white;
+  color: map-get($colors , primary );
   font-weight: bold;
   border-radius: 10px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
   padding: 10px 15px;
   text-transform: uppercase;
   transition:  0.3s ease-in-out;
   letter-spacing: 2px;
   &:hover {
-    background-color: map-get($colors, secondary)!important;
-    color:white;
+    background-color: map-get($colors , secondary );
+    color: white;
+    text-decoration: none;
   }
 }
 .nav-main__desktop__item-scrolled {
-  color: black;
+  color: map-get($colors , primary );
 }
 .spacer {
   flex-grow: 1;
 }
 .toggle-button {
-  display: none;
-  width: 3rem;
+  display: inline-block;
+  width: 2.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
-  padding-top: 0;
-  padding-bottom: 0;
+  // padding-top: 0;
+  // padding-bottom: 0;
+  margin: 0 1.5rem;
   vertical-align: middle;
+  @include media-min-width(map-get($devices, tablet)) {
+    display: none;
+  }
 }
 
 .toggle-button:focus {
@@ -92,13 +140,16 @@ h1 {
 .toggle-button__bar {
   width: 100%;
   height: 0.2rem;
-  background: black;
+  background: map-get($colors , secondary );
   display: block;
   margin: 0.6rem 0;
 }
 .header-scrolled {
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.95);
   height: 70px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(246,15,62,1);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(246,15,62,1);
+  box-shadow: 0px 1px 2px 0px rgba(246,15,62,1);
 }
 .header-logo {
   width: 80px;
@@ -123,9 +174,200 @@ h1 {
   opacity: 0;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: map-get($zindexes , backdrop );
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   transition: opacity 200ms linear;
+}
+
+/*
+* MENU MOVIL
+*/
+.mobile-nav__container {
+  transform: translateX(-105%); 
+  box-sizing: border-box;
+  position: fixed;
+  opacity: 0;
+  max-width: 400px;
+  z-index: map-get($zindexes , mobile-nav );
+  top: 0;
+  left: 0;
+  background: white;
+  width: 70%;
+  height: 100vh;
+  transition: transform 300ms ease-out;
+  background-color: map-get($colors , main );
+  -webkit-box-shadow: 1px 0px 2px 0px rgba(246,15,62,1);
+  -moz-box-shadow: 1px 0px 2px 0px rgba(246,15,62,1);
+  box-shadow: 1px 0px 2px 0px rgba(246,15,62,1);
+  .mobile-nav-content{
+    padding: 2rem;
+  }
+
+  p{
+    padding: 2rem 0 1rem 0;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  h2{
+    font-size: 4rem;
+    color: red;
+  }
+  h5{
+    padding: 0.5rem;
+    border-bottom: 2px solid white;
+  }
+  .mobile-nav__background{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin: 0;
+      padding: 0;
+      max-height: 250px;
+    }
+  }
+
+  .mobile-nav-content{
+    height: 100%;
+    width: 100%;
+  }
+
+  .mobile-nav{
+    padding: 1rem 0;
+  }
+  .mobile-nav__items {
+    height: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+    .mobile-nav__item {
+      padding: 0.5rem 0;
+      
+    }
+    .mobile-nav__item a{
+      text-transform: uppercase;
+      color: map-get($colors , secondary )!important;
+      padding: 0.5rem;
+      font-weight: bold;
+      border-radius: 5px;
+      &:hover {
+        text-decoration: none;
+        background-color: whitesmoke;
+      }
+    }
+
+}
+
+.mobile-nav__social{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+    padding: 10px;
+    i{
+      font-size: 2rem;
+      padding: 0.2rem;
+    }
+        .mobile-nav__linkedin{
+          color:#039be5
+        }
+    .mobile-nav__facebook{
+      color: #3b5998 !important
+    }
+}
+}
+
+
+/* -------------------------------
+-------FOOTER ----------------
+*/
+
+.container-grid {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "fleft"
+    "fcenter"
+    "fright";
+}
+@media (min-width: 700px) {
+  .container-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "fleft fcenter fright";
+  }
+}
+.footer-grid__left {
+  grid-area: fleft;
+}
+.footer-grid__center {
+  grid-area: fcenter;
+  background-image: url("/static/fingerprint-2750393_1280.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-grid__center h5,
+.footer-grid__right h5 {
+  color: #f78034;
+}
+.footer-grid__right {
+  grid-area: fright;
+}
+.footer-grid__right ul li {
+  margin: 0.5rem 0;
+}
+.container-grid h5 {
+  text-transform: uppercase;
+  line-height: 45px;
+}
+.footer-grid__left h5 {
+  padding-bottom: 2rem;
+}
+.container-grid h5 span {
+  color: #f78034;
+}
+.container-grid .footer-logo {
+  max-width: 250px;
+  margin: 1rem 0;
+}
+.footer-grid__center .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-grid__center .social-icons i {
+  font-size: 2rem;
+}
+.footer-grid__center .social-icons a:hover {
+  transform: scale(1.2);
+}
+.footer-grid__center .social-icons .facebook-icon {
+  color: #3b5998 !important;
+}
+.footer-copyright__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

@@ -7,6 +7,12 @@
 $widths: (
   bodyMaxWidth: 1600px
 );
+
+$titleSizes: (
+  h2-min: 1.8rem,
+  h2-large: 2.5rem
+);
+
 $colors: (
   bodyBg: #161515,
   main: #f8b137,
@@ -22,4 +28,10 @@ $devices: (
   laptop: 1024px,
   laptopL: 1440px,
   desktop: 2560px
+);
+/* el Navbar de bootstrap tiene un z-index de 1030 */
+$zindexes: (
+  backdrop: 1040,
+  main-nav: 100,
+  mobile-nav:1050
 );

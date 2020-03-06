@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,6 @@
     <title>Teotl Consultores</title>
   </head>
   <body>
-    <div class="backdrop"></div>
     <header class="header">
       <div class="header-Wrapper">
         <a href="/"
@@ -31,6 +30,38 @@
         </button>
       </div>
     </header>
+    <!-- INICIO Mobile Menu-->
+    <div class="mobile-nav__container">
+      <div class="mobile-nav__background">
+        <img src="static/LOGO-TEOTL.png" alt="logo-Téotl-menu-celular" >
+      </div>
+      <div class="mobile-nav-content">
+        <h5 class="mobile-nav__header" >Menu</h5>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="packages/index.html">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="customers/index.html">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav__item--cta">
+                <a href="start-hosting/index.html">Start Hosting</a>
+            </li>
+        </ul>
+      </nav>
+      <p>Siguenos en nuestras redes sociales!!</p>
+      <div class="mobile-nav__social">
+        <a href="#" >
+          <i class="fab fa-facebook-square mobile-nav__facebook"></i>
+        </a>
+        <a href="#" >
+          <i class="fab fa-linkedin mobile-nav__linkedin"></i>
+        </a>
+      </div>
+      </div>
+    </div>
+  <!--FIN mobile Menu-->
     <div class="hero-home">
       <div class="backdropHome">
         <div class="heroHome__title">
@@ -56,9 +87,9 @@
     </div>
     <!--hero-home-->
     <main>
-      <div class="container" >
-        <section  id="SolicitaCotizacion">
-          <h2>Solicita ahora tu cotización</h2>
+      <div class="container" id="SolicitaCotizacion">
+        <section  >
+          <h2>¡Solicita ahora tu cotización!</h2>
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
@@ -93,102 +124,153 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </section> <!--#solicitaCotizacion-->
-        <section >
-            <h2 > Con <span >Téotl</span>, <br /><span>seguro</span>
+      </div><!--.container-->
+        <section id="whyUs">
+          <div class="container">
+            <h2 class="h2" > Con <span >Téotl</span>, <br /><span>seguro</span>
               construyes
             </h2>
-            <p >
-              “<em
-                >Ayudando a construir seguro en Monterrey y su área metropolitana
+            <p class="whyUs__slogan" >
+                Ayudando a construir seguro en Monterrey y su área metropolitana
                 desde el año 2014, manteniendo siempre nuestro compromiso con la
-                calidad</em
-              >”.
+                calidad
             </p>
+          </div>
 
-          <div >
+          <div class="servicios" >
             <div class="servicio1">
-              <div class="servicio">
                 <i class="fas fa-users"></i>
-                <div class="content">
+                
                   <h5 >Personal Calificado</h5>
                   <p >
                     Capital humano capacitado y comprometido a una constante mejora
                     personal y profesional.
                   </p>
-                </div>
-              </div>
+                
             </div>
             <div class="servicio2">
-              <div class="servicio center">
-                <i class="material-icons prefix large orange-text text-lighten-1"
-                  >thumb_up</i
-                >
-                <div class="content">
-                  <h5 class="orange-text">Trabajos Garantizados</h5>
-                  <p class="white-text">
+                <i class="fas fa-thumbs-up"></i>
+                
+                  <h5 >Trabajos Garantizados</h5>
+                  <p >
                     Capital humano capacitado y comprometido a una constante mejora
                     personal y profesional.
                   </p>
-                </div>
-              </div>
+                
             </div>
             <div class="servicio3">
-              <div class="servicio center">
-                <i class="material-icons prefix large orange-text text-lighten-1"
-                  >verified_user</i
-                >
-                <div class="content">
-                  <h5 class="orange-text">Etica Profesional</h5>
-                  <p class="white-text">
+                <i class="fas fa-user-shield"></i>
+                
+                  <h5>Etica Profesional</h5>
+                  <p>
                     Capital humano capacitado y comprometido a una constante mejora
                     personal y profesional.
                   </p>
-                </div>
-              </div>
+                
             </div>
             <div class="servicio4">
-              <div class="servicio center">
-                <i class="material-icons prefix large orange-text text-lighten-1"
-                  >star</i
-                >
-                <div class="content">
-                  <h5 class="orange-text">Normas de Cálidad</h5>
-                  <p class="white-text">
+                <i class="fas fa-star"></i>
+                
+                  <h5 >Normas de Cálidad</h5>
+                  <p >
                     Aplicamos los más estrictos estándares de calidad que garantizan
                     la correcta ejecución de nuestro trabajo.
                   </p>
-                </div>
-              </div>
+              
             </div>
             <div class="servicio5">
-              <div class="servicio center">
-                <i class="material-icons prefix large orange-text text-lighten-1"
-                  >timelapse</i
-                >
-                <div class="content">
-                  <h5 class="orange-text">Cotizaciones al Instante</h5>
-                  <p class="white-text">
+                <i class="far fa-clock"></i>
+                
+                  <h5 >Cotizaciones al Instante</h5>
+                  <p >
                     Cotización en menos de 24 horas!.
                   </p>
-                </div>
+                
               </div>
-            </div>
             <div class="servicio6">
-              <div class="servicio center">
-                <i class="material-icons prefix large orange-text text-lighten-1"
-                  >laptop_mac</i
-                >
-                <div class="content">
-                  <h5 class="orange-text">Tecnología de Vanguardia</h5>
-                  <p class="white-text">
+                <i class="fas fa-laptop"></i>
+                  <h5 >Tecnología de Vanguardia</h5>
+                  <p >
                     Hardware y software de ultima generación.
                   </p>
-                </div>
+
+            </div>
+          </div>
+        </section><!--FIN section whyUs-->
+
+        <!--INICIO secition parallax info-->
+        <section id="parallax-info" >
+          <div class="parallax-info__Bg">
+            <div class="parallax-info__backdrop">
+              
+                <div class="row " >
+                  <div class="col-12 col-md-6 parallax-info__duda text-center">
+                    <p>Tienes alguna duda o pregunta acerca de nuestros servicios</p>
+                  </div>
+                  <div class="col-12 col-md-6 parallax-info__contacto ">
+                    <div class="text-center">
+                      <p class="parallax-info__cel" >+52 (81) 1297 8327</p>
+                      <p class="parallax-info_email">
+                        info@teotl-consultores.com.mx
+                      </p>
+                      <button type="button" class="btn btn-secondary" >Contactanos</button>
+                    </div>
+                  </div>
+                
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </section>  <!--FIN secition parallax info-->
+
+         <!--INICIO secition Nuestro Equipo-->
+         <section>
+           <h2>Nuestro equipo</h2>
+         </section>
+      
+        <footer>
+          <div class="container ">
+            <div class="container-grid">
+              <div class="footer-grid__left">
+                <h5>Con <span>Téotl</span>, <br> <span>seguro</span> construyes </h5>
+                <div class="footer-logo" >
+                  <img src="/static/LOGO-TEOTL.png" >
+                </div>
+              </div>
+              <div class="footer-grid__center center">
+                <h5>Contactanos</h5>
+                <p>Garcia, N.L., México</p>
+                <p>Tel: +52 (81) 1297 - 8327</p>
+                <p>info@teotl-consultores.com.mx</p>
+                <div class="social-icons">
+                  <a href="#" class="facebook-icon" ><i class="fab fa-facebook-square"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="footer-grid__right center">
+                <h5>Links</h5>
+                <ul>
+                  <li><a href="#" >Estudios de Riesgos Geológicos</a></li>
+                  <li><a href="#" >Estudios Geofísicos</a></li>
+                  <li><a href="#" >Estudios de Impacto Vial</a></li>
+                  <li><a href="#" >Estudios de Impacto Ambiental</a></li>
+                  <li><a href="#" >Estudioss de Estabilidad de Talud</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright grey darken-2">
+            <div class="container">
+              <div class="footer-copyright__content" >
+                <div >
+                  © 2014 - <span >2020</span> | Téotl Consultores | Todos los derechos reservados
+                </div>
+                <div >
+                  <a class="grey-text text-lighten-4 right" href="#!">Políticas de Privacidad</a>
+                </div>
+              </div>        
+            </div><!--container-->
+          </div>
+        </footer>
     </main>
   </body>
 </html>
