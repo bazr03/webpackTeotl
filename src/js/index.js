@@ -12,7 +12,7 @@ import "../styles/index.scss";
 ***** REVISAR LAS RUTAS A IMAGENES DESDE ARCHIVOS CSS 
  CUANDO SE LANZE A PRODUCIION 
 */
-// import "../static/iconoTeotl.png";
+import "../static/texture.svg";
 import "../static/LogoTeotl.svg"
 import "../static/LOGO-TEOTL.png";
 import "../static/panorama-Monterrey-NL-OPT.jpg";
@@ -21,6 +21,10 @@ import "../static/panorama-Monterrey-NL-OPT-450x650px.jpg"
 import "../static/Isotipo-blanco-teotl-SemiTransparent17.svg";
 import "../static/Caracol-gris-teotl.svg"
 import "../static/monterrey-H600px-W900px.jpg"
+
+import "../static/nuestrosClientes/bonatti.jpg"
+import "../static/nuestrosClientes/carrillo.jpg"
+import "../static/nuestrosClientes/carza.jpg"
 
 
 /*--------------------------

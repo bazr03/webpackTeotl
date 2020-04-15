@@ -10,7 +10,7 @@
   <body class="d-flex flex-column" >
       <div class="backdrop" ></div>
     <header >
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-bavbar fixed-top">
         <a class="navbar-brand" href="/"><img src="static/LogoTeotl.svg" width="100px" ></a>
         <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
           </ul>
         </div>
       </nav>
-      <div class="hero-home container-lg">
+      <div class="hero-home container-xl">
         <div class="backdropHome">
           <div class="heroHome__title">
             <h1>Geociencias e Ingeniería Aplicada</h1>
@@ -93,10 +93,13 @@
   <!--INICIO MAIN-->
   <main id="main-content" >
     <section class="my-5  py-3">
-      <div class="container-lg shadow p-3 mb-5 bg-dark rounded">
-        <div class="row">
+      <div class="container-xl shadow p-3 mb-5 bg-dark-semiT rounded">
+        <div class="row align-items-center bg-isotipo-Teotl">
           <div class="col-12">
             <h2 class="text-primary" >Solicita ahora tu cotización</h2>
+          </div>
+          <div class="col-12 col-md-6 ">
+            <p class="p-3 my-2 cotizacion_reglamento bg-dark-semiT" >Alcances según Reglamento de Zonificación y Uso de Suelo de Nuevo León, Matriz de Compatibilidad de Uso de Suelos, así como como las Normas de Diseño Urbano E ingeniería Vial y la Ley General de Protección Civil DOF 19-01-18, Sección XXIII y XXIV.</p>
           </div>
           <div class="col-12 col-md-6">
             <form>
@@ -116,58 +119,149 @@
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
-          <div class="col-12 col-md-6">
-            <h3>Algo extra</h3>
-            <p>Alcances según Reglamento de Zonificación y Uso de Suelo de Nuevo León, Matriz de Compatibilidad de Uso de Suelos, así como como las Normas de Diseño Urbano E ingeniería Vial y la Ley General de Protección Civil DOF 19-01-18, Sección XXIII y XXIV.</p>
-          </div>
+         
         </div>
       </div>
-    </section><!--FIN SECCION COTIZACIO-->
-    <section>
-      <div class="container-lg shadow p-3 mb-5 bg-dark rounded">
+    </section><!--FIN SECCION COTIZACION-->
+    <section id="servicios" ><!--INCIO SECCION SERVICIOS-->
+      <div class="container-xl shadow p-4 mb-5 bg-dark-semiT rounded ">
         <div class="row">
           <div class="col-12">
-            <h2>Con teotl, seguro construyes</h2>
+            <h2>Con <span >teotl</span>, <br> <span >seguro</span> construyes</h2>
           </div>
           <div class="col-12">
-            <p>“Ayudando a construir seguro en Monterrey y su área metropolitana desde el año 2014, manteniendo siempre nuestro compromiso con la calidad”</p>
+            <p class="servicios__slogan text-justify" >“Ayudando a construir seguro en Monterrey y su área metropolitana desde el año 2014, manteniendo siempre nuestro compromiso con la calidad”</p>
+          </div>
+        </div>
+        <div class="servicios">
+          <div class="servicio">
+            <i class="fas fa-user-friends text-secondary"></i>
+            <h5 class="text-primary" >Personal Calificado</h5>
+            <p>Capital humano capacitado y comprometido a una constante mejora
+              personal y profesional.</p>
+          </div>
+          <div class="servicio">
+            <i class="fas fa-thumbs-up text-secondary"></i>
+            <h5 class="text-primary" >Trabajos Garantizados</h5>
+            <p>Clientes 100% satisfechos.</p>
+          </div>
+          <div class="servicio">
+            <i class="fas fa-shield-alt text-secondary"></i>
+            <h5 class="text-primary" >Etica profesional</h5>
+            <p>Nos regimos por principios que regulan y guían nuestra actividad profesional..</p>
+          </div>
+          <div class="servicio">
+            <i class="fas fa-star text-secondary"></i>
+            <h5 class="text-primary" >Normas de Calidad</h5>
+            <p>Aplicamos los más estrictos estándares de calidad que garantizan la correcta ejecución de nuestro trabajo..</p>
+          </div>
+          <div class="servicio">
+            <i class="fas fa-clock text-secondary"></i>
+            <h5 class="text-primary" >Cotizaciones al Instante!</h5>
+            <p>Respuesta en menos de 24 horas!.</p>
+          </div>
+          <div class="servicio">
+            <i class="fas fa-laptop text-secondary"></i>
+            <h5 class="text-primary" >Tecnología de Vanguardia</h5>
+            <p>Hardwere y Software de ultima generación!.</p>
           </div>
         </div>
       </div>
-    </section>
+    </section><!--FIN SECCION SERVICIOS-->
+    <section id="parallax-info" >
+      <div class="parallax-info__Bg">
+        <div class="parallax-info__backdrop">
+            <div class="row " >
+              <div class="col-12 col-md-6 parallax-info__duda text-center">
+                <h4>Tienes alguna duda o pregunta acerca de nuestros servicios</h4>
+              </div>
+              <div class="col-12 col-md-6 parallax-info__contacto ">
+                <div class="text-center">
+                  <p class="parallax-info__cel" >+52 (81) 1297 8327</p>
+                  <p class="parallax-info_email">
+                    info@teotl-consultores.com.mx
+                  </p>
+                  <button type="button" class="btn btn-secondary" >Contactanos</button>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>  <!--FIN secition parallax info-->
+
+    <!--INICIO secition NUESTROS CLIENTES-->
+    <section>
+      <div class="container-sm" >
+        <div class="nuestros-clientes_wrap d-flex align-items-center" >
+      <div  class="carousel slide  nuestros-clientes__carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselNuestrosClientes" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselNuestrosClientes" data-slide-to="1"></li>
+          <li data-target="#carouselNuestrosClientes" data-slide-to="2"></li>
+        </ol> 
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="/src/static/nuestrosClientes/bonatti.jpg" class="rounded " alt="logo-Bonatti">
+          </div>
+          <div class="carousel-item text-center ">
+            <img src="/src/static/nuestrosClientes/carrillo.jpg" class="rounded " alt="logo-Carrillo">
+          </div>
+          <div class="carousel-item text-center ">
+            <img src="/src/static/nuestrosClientes/carza.jpg" class="rounded" alt="logo-Carza">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselNuestrosClientes" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselNuestrosClientes" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a> 
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <img src="/src/static/nuestrosClientes/carza.jpg" class="rounded img-client" alt="logo-Carza">
+        </div>
+        <div class="col-12 col-md-3">
+          <img src="/src/static/nuestrosClientes/carrillo.jpg" class="rounded img-client" alt="logo-Carrillo">
+        </div>
+        <div class="col-12 col-md-3"><img src="/src/static/nuestrosClientes/bonatti.jpg" class="rounded img-client" alt="logo-Bonatti"></div>
+        <div class="col-3">
+          <h5>otra imagen de cleintes</h5>
+        </div>
+      </div>
+    </div>
+    </section><!--FIN secition NUESTROS CLIENTES-->
   </main> <!--FIN MAIN-->
 
-    <footer id="sticky-footer">
-      <div class="container-lg">
-        <div class="row justify-content-center align-items-start ">
-          <div class="col-12 col-md-4 footer__slogan ">
-            <h5>Con <span>Teotl</span> <br> <span>Seguro</span> construyes</h5>
+    <footer id="sticky-footer" class="mt-5 pt-5">
+      <div class=" grid-footer bg-dark-semiT p-3">
+        <div class="footer-content">
+          <h5>Con <span>Teotl</span> <br> <span>Seguro</span> construyes</h5>
             <div class="footer__slogan-image" >
               <img src="static/LogoTeotl.svg" alt="logo-teótl-footer." class="img-fluid mt-3">
             </div>
-          </div>
-          <div class="col-12 col-md-4 footer__info ">
-            <h5 class="text-primary" >Contactanos</h5>
+        </div>
+        <div class="footer-content">
+          <h5 class="text-primary" >Contactanos</h5>
 
             <p>García, Nuevo León, México</p>
             <p>+52 (81) 1297 8327</p>
             <p>info@teotl-consultores.com.mx</p>
-          </div>
-          <div class="col-12 col-md-4 d-none d-sm-block ">
-            <h5>Links</h5>
-          </div>
-        </div> <!--.row-->
-        <div class="row mt-5 copyright justify-content-center align-items-center">
-          <div class="col-12 col-md-6 text-center">
-            <h6 class="my-2" >
-              <small class="text-muted">
-                Teotl Consultores | Todos los derechos reservados
-              </small>
-            </h6>
-          </div>
-          <div class="col-12 col-md-6 text-center">
-            <p class="my-2" ><small class="text-muted">Políticas de Privacidad</small></p>
-          </div>
+        </div>
+        <div class="footer-content">
+          <h5>Links</h5>
+          <ul>
+            <li><a href="#!" >Riesgo Geológico </a></li>
+            <li><a href="#!" >Riesgo Hidrológico </a></li>
+            <li><a href="#!" >Estabilidad de Talud </a></li>
+            <li><a href="#!" >Estudios Geofísicos </a></li>
+          </ul>
         </div>
       </div>
     </footer>
