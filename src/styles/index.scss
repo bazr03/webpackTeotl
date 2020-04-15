@@ -269,22 +269,14 @@
 }
 
 
-// .nuestros-clientes{
-//   background-color: white!important;
-//   height: 300px;
-//   border: 1px solid red;
-// }
+/* -------------------------------
+-------NUESTROS CLIENTES ----------------
+*/
 
-.nuestros-clientes_wrap{
-  background-color: white!important;
-  height: 300px;
+.nuestros-clientes{
+  background-color: white;
 }
-
-.nuestros-clientes__carousel{
-  width: 60%;
-  margin: 0 auto;
-}
-
 .img-client{
   max-height: 80px;
+  max-width: 120px;
 }

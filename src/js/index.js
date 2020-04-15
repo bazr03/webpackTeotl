@@ -23,8 +23,13 @@ import "../static/Caracol-gris-teotl.svg"
 import "../static/monterrey-H600px-W900px.jpg"
 
 import "../static/nuestrosClientes/bonatti.jpg"
-import "../static/nuestrosClientes/carrillo.jpg"
+import "../static/nuestrosClientes/Constructora-Carillo.png"
 import "../static/nuestrosClientes/carza.jpg"
+import "../static/nuestrosClientes/Construrrey.png"
+import "../static/nuestrosClientes/ENERGEX.png"
+import "../static/nuestrosClientes/GEO.png"
+import "../static/nuestrosClientes/CIMEPYAE.png"
+import "../static/nuestrosClientes/Secretaria-Desarrollo-Agropecuario.jpg"
 
 
 /*--------------------------
