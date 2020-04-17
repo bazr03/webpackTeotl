@@ -4,8 +4,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, "src/js/index.js")
-    //nosotros: path.resolve(__dirname, 'src/js/nosotros.js')
+    index: path.resolve(__dirname, "src/js/index.js"),
+    nosotros: path.resolve(__dirname, 'src/js/nosotros.js')
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -57,9 +57,9 @@ module.exports = {
       template:path.resolve(__dirname,  "src/index2.html"),
       filename: "index.html"
     }),
-    // new HtmlWebpackPlugin({
-    //     template: 'src/nosotros.html',
-    //     filename: 'nosotros.html',
-    // }),
+     new HtmlWebpackPlugin({
+         template: 'src/nosotros.html',
+         filename: 'nosotros.html',
+     }),
   ]
 };

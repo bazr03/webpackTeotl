@@ -1,174 +1,205 @@
 <!DOCTYPE html>
 <html lang="es-MX">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Prueba Nosotros Teotl" />
-    <meta name="author" content="Ivan Cesar Bazaldua Rodriguez" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/40cfc3ee2b.js" crossorigin="anonymous"></script>
     <title>Nosotros</title>
   </head>
-  <body>
-    <div class="navbar-fixed">
-      <nav class="orange">
-        <div class="nav-wrapper">
-          <a href="/" class="brand-logo"
-            ><img
-              src="static/iconoTeotl.png"
-              alt="logo-Téotl-Consultores."
-              class=" header-logo"
-          /></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="/">Inicio</a></li>
-            <li class="active"><a href="/nosotros.html">Quienes Somos</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
+  <body class="d-flex flex-column" >
+    <div class="backdrop" ></div>
+  <header >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-bavbar fixed-top">
+      <a class="navbar-brand" href="/"><img src="static/LogoTeotl.svg" width="100px" ></a>
+      <!-- <div class="spacer" ></div> -->
+      <button class="navbar-toggler toggle-button" type="button" data-toggle="collapse"  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav main-menu-links">
+          <li class="nav-item ">
+            <a class="nav-link " href="/">Inicio </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link  " href="nosotros.html">Quienes Somos <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero-nosotros container-xl boxShadow">
+      <div class="hero-backdrop">
+      <div class="row h-100">
+        <div class="col-12">
+          <div class="row h-100">
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+              <h1 class="text-center">Acerca de Nosotros</h1>
+            </div>
+          </div>
         </div>
-      </nav>
+        <div class="col-12">
+          <div class="row h-100">
+            <div class="col-8 col-md-6 ">
+              <p class="p-3 nosotros-slogan">Nuestro exito no solo se debe a la calidad de nuestro trabajo; sino tambien a nuestra actitud, nuestro enfoque y la manera que tratamos a nuestros clientes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="static/law-firm-30.jpg" /></div>
     </div>
+    <!--hero-home-->
+  </header>
+  <!-- INICIO Mobile Menu-->
+  <div class="mobile-nav__container">
+    <div class="mobile-nav__background">
+      <img src="static/LogoTeotl.svg"  alt="logo-Téotl-menu-celular" >
+    </div>
+    <div class="mobile-nav-content">
+      <h5 class="mobile-nav__header" >Menu</h5>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+          <li class="mobile-nav__item">
+              <a href="packages/index.html">Packages</a>
+          </li>
+          <li class="mobile-nav__item">
+              <a href="customers/index.html">Customers</a>
+          </li>
+          <li class="mobile-nav__item mobile-nav__item--cta">
+              <a href="start-hosting/index.html">Start Hosting</a>
+          </li>
+      </ul>
+    </nav>
+    <p>Siguenos en nuestras redes sociales!!</p>
+    <div class="mobile-nav__social">
+      <a href="#" >
+        <i class="fab fa-facebook-square mobile-nav__facebook"></i>
+      </a>
+      <a href="#" >
+        <i class="fab fa-linkedin mobile-nav__linkedin"></i>
+      </a>
+    </div>
+    </div>
+  </div>
+<!--FIN mobile Menu-->
 
-    <div class="container">
+<!--INICIO MAIN-->
+<main  >
+  <section class="my-5  py-3">
+    <div class="container-xl shadow p-3 mb-5 bg-dark-semiT rounded">
+      <div class="row p-3">
+        <div class="col-12 col-md-8 text-center px-3">
+          <h2 class="text-primary" >Brindando servicios de calidad desde 2014</h2>
+          <p class="parrafo">El sistema característico de servicio a nuestros clientes, nos permite contribuir no solo en la aportación técnica, también con un significativo control en sus gastos durante todo el desarrollo del proyecto de exploración, perforación (si este fuera necesario) y generación de información. Nuestros servicios se adaptan al requerimiento exacto que el cliente solicita.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center ">
+          <img class="img-quality-services d-none d-md-block" src="static/adquisicion-datos-electricos-OPT.jpg" />
+        </div>
+      </div>
+    </div>
+  </section> <!--section-->
+
+  <section class="my-5  py-3">
+    <h2 class="text-primary" >Nuestra motivación</h2>
+    <div class="container-xl shadow p-3 mb-5 bg-dark-semiT rounded">
+      <div class="row px-3 py-5 ">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center mb-3 h-100">
+          <div class="card bg-accent h-100" style="width: 25rem;">
+            <img src="static/estrellas-opt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Misión</h5>
+              <p class="card-text">Tener el más alto estándar de Conocimiento y Calidad en la ejecución de estudios relacionados a Geociencias.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center h-100">
+          <div class="card bg-accent h-100" style="width: 25rem;">
+            <img src="static/pulgares-arriba-opt.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Visión</h5>
+              <p class="card-text">Ser el mejor referente en la ciudad de Monterrey y su área metropolitana para la especialización de Geociencias Aplicadas a la Ingenieria Civil en los proximos años (2019-2021).</p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-5  py-3">
+    <h2 class="text-primary">Nuestros Valores</h2>
+    <div class="container-xl shadow p-3 mb-5 bg-dark-semiT rounded">
       <div class="row">
-        <div class="col s12">
-          <div class="valign-wrapper">
-            <h1 class="center">This should be vertically aligned</h1>
-          </div>
+        <div class="col-12">
+          Valores
         </div>
       </div>
     </div>
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
-        <br /><br />
-        <h1 class="header center orange-text">Starter Template</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">
-            A modern responsive front-end framework based on Material Design
-          </h5>
+  </section>
+</main> <!--FIN MAIN-->
+
+  <footer id="sticky-footer" class="mt-5 pt-5">
+    <div class="container-fluid bg-dark-semiT pt-5">
+      <div class="row ">
+        <div class="col-md-4 d-flex justify-content-center my-4">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <h5 class="footer_slogarn" >Con <span class="text-primary">Teotl</span> <br> <span class="text-primary">Seguro</span> construyes</h5>
+            </div>
+            <div class="col-12 text-center">
+              <img src="static/LogoTeotl.svg" alt="logo-teótl-footer." class="img-fluid mt-3 footer__slogan-image">
+            </div>
+          </div><!--.row-->
         </div>
-        <div class="row center">
-          <a
-            href="http://materializecss.com/getting-started.html"
-            id="download-button"
-            class="btn-large waves-effect waves-light orange"
-            >Get Started</a
-          >
+        <div class="col-md-4 my-4">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-primary mb-4" >Contactanos</h5>
+            </div>
+            <div class="col-12 text-center ">
+              <p>García, Nuevo León, México</p>
+          <p>+52 (81) 1297 8327</p>
+          <p>info@teotl-consultores.com.mx</p>
+            </div>
+            <div class="col-12 d-flex justify-content-around align-items-center footer-social">
+              <a href="#" >
+                <i class="fab fa-facebook-square footer__facebook"></i>
+              </a>
+              <a href="#" >
+                <i class="fab fa-linkedin footer__linkedin"></i>
+              </a>
+            </div>
+          </div> <!--.row-->     
         </div>
-        <br /><br />
+        <div class="col-md-4 my-4">
+          <div class="row">
+            <div class="col-12">
+              <h5 class="text-primary mb-4">Links</h5>
+            </div>
+            <div class="col-12 text-center">
+              <ul class="footer-links" >
+                <li ><a href="#!" >Riesgo Geológico </a></li>
+                <li ><a href="#!" >Riesgo Hidrológico </a></li>
+                <li ><a href="#!" >Estabilidad de Talud </a></li>
+                <li ><a href="#!" >Estudios Geofísicos </a></li>
+              </ul>
+            </div>
+          </div><!--.row-->
+        </div>
+      </div> <!--.row-->
+      <div class="row copyright py-2">
+        <div class="col-12">
+          <p class="text-muted">Teotl Consultores | Todos los derechos reservados</p>
+        </div>
       </div>
     </div>
+  </footer>
+</body>
 
-    <div class="container">
-      <div class="section">
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text">
-                <i class="material-icons">flash_on</i>
-              </h2>
-              <h5 class="center">Speeds up development</h5>
 
-              <p class="light">
-                We did most of the heavy lifting for you to provide a default
-                stylings that incorporate our custom components. Additionally,
-                we refined animations and transitions to provide a smoother
-                experience for developers.
-              </p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text">
-                <i class="material-icons">group</i>
-              </h2>
-              <h5 class="center">User Experience Focused</h5>
-
-              <p class="light">
-                By utilizing elements and principles of Material Design, we were
-                able to create a framework that incorporates components and
-                animations that provide more feedback to users. Additionally, a
-                single underlying responsive system across all platforms allow
-                for a more unified user experience.
-              </p>
-            </div>
-          </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center light-blue-text">
-                <i class="material-icons">settings</i>
-              </h2>
-              <h5 class="center">Easy to work with</h5>
-
-              <p class="light">
-                We have provided detailed documentation as well as specific code
-                examples to help new users get started. We are also always open
-                to feedback and can answer any questions a user may have about
-                Materialize.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br /><br />
-    </div>
-
-    <footer class="page-footer orange">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
-            <p class="grey-text text-lighten-4">
-              We are a team of college students working on this project like
-              it's our full time job. Any amount would help support and continue
-              development on this project and is greatly appreciated.
-            </p>
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Settings</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-          <div class="col l3 s12">
-            <h5 class="white-text">Connect</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">
-          Made by
-          <a class="orange-text text-lighten-3" href="http://materializecss.com"
-            >Materialize</a
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../../bin/materialize.js"></script>
-    <script src="js/init.js"></script>
   </body>
 </html>
