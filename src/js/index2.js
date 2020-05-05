@@ -3,7 +3,7 @@ const path = require("path");
 
 
 import "bootstrap";
-import "../styles/shared.scss";
+import "../styles/main.scss";
 import "../styles/index.scss";
 
 
@@ -39,50 +39,50 @@ import "../static/nuestrosClientes/Secretaria-Desarrollo-Agropecuario.jpg"
 /*--------------------------
 ------- SELECTORES ----------
 ----------------------------*/
-const heroHome = document.querySelector(".hero-home");
-const header = document.querySelector(".header");
-const heroImage = document.querySelector(".header-logo");
-const mainNavLinks = document.querySelectorAll(".nav-main__desktop a");
+// const heroHome = document.querySelector(".hero-home");
+// const header = document.querySelector(".header");
+// const heroImage = document.querySelector(".header-logo");
+// const mainNavLinks = document.querySelectorAll(".nav-main__desktop a");
 const backdrop = document.querySelector(".backdrop");
 const toggleNavButton = document.querySelector(".toggle-button");
 const mobileNav = document.querySelector('.mobile-nav__container');
-let mainNavLinksArr = Array.from(mainNavLinks);
+// let mainNavLinksArr = Array.from(mainNavLinks);
 
 console.log(backdrop);
 /*--------------------------
 ------- OBSERVADORES ----------
 ----------------------------*/
-observadores();
+// observadores();
 
-function observadores() {
-  const heroOptions = {
-    rootMargin: "-140px"
-  };
+// function observadores() {
+//   const heroOptions = {
+//     rootMargin: "-140px"
+//   };
 
-  const heroObserver = new IntersectionObserver(function(
-    entries,
-    heroObserver
-  ) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        header.classList.add("header-scrolled");
-        heroImage.classList.add("headerImg-scrolled");
-        mainNavLinksArr.forEach(link => {
-          link.classList.add("nav-main__desktop__item-scrolled");
-        });
-      } else {
-        header.classList.remove("header-scrolled");
-        heroImage.classList.remove("headerImg-scrolled");
-        mainNavLinksArr.forEach(link => {
-          link.classList.remove("nav-main__desktop__item-scrolled");
-        });
-      }
-    });
-  },
-  heroOptions);
+//   const heroObserver = new IntersectionObserver(function(
+//     entries,
+//     heroObserver
+//   ) {
+//     entries.forEach(entry => {
+//       if (!entry.isIntersecting) {
+//         header.classList.add("header-scrolled");
+//         heroImage.classList.add("headerImg-scrolled");
+//         mainNavLinksArr.forEach(link => {
+//           link.classList.add("nav-main__desktop__item-scrolled");
+//         });
+//       } else {
+//         header.classList.remove("header-scrolled");
+//         heroImage.classList.remove("headerImg-scrolled");
+//         mainNavLinksArr.forEach(link => {
+//           link.classList.remove("nav-main__desktop__item-scrolled");
+//         });
+//       }
+//     });
+//   },
+//   heroOptions);
 
-  heroObserver.observe(heroHome);
-}
+//   heroObserver.observe(heroHome);
+// }
 
 
 /*--------------------------

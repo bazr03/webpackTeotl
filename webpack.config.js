@@ -14,8 +14,8 @@ function recursiveIssuer(m) {
 
 module.exports = {
   entry: {
-    index: path.resolve(__dirname, "src/js/index.js")
-    //nosotros: path.resolve(__dirname, 'src/js/nosotros.js')
+    index: path.resolve(__dirname, "src/js/index.js"),
+    nosotros: path.resolve(__dirname, 'src/js/nosotros.js')
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -85,19 +85,19 @@ module.exports = {
       template: "src/index.html",
       filename: "index.html",
       chunks: ["index"],
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeRedundantAttributes: true,
-        removeScriptTypeAttributes: true,
-        removeStyleLinkTypeAttributes: true,
-        useShortDoctype: true
-      }
+      // minify: {
+      //   collapseWhitespace: true,
+      //   removeComments: true,
+      //   removeRedundantAttributes: true,
+      //   removeScriptTypeAttributes: true,
+      //   removeStyleLinkTypeAttributes: true,
+      //   useShortDoctype: true
+      // }
     }),
-    // new HtmlWebpackPlugin({
-    //     template: 'src/nosotros.html',
-    //     filename: 'nosotros.html',
-    //     chunks : ['nosotros'],
+     new HtmlWebpackPlugin({
+         template: 'src/nosotros.html',
+         filename: 'nosotros.html',
+         chunks : ['nosotros'],
     //     minify:{
     //         collapseWhitespace:true,
     //         removeComments:true,
@@ -106,7 +106,7 @@ module.exports = {
     //         removeStyleLinkTypeAttributes:true,
     //         useShortDoctype:true
     //     }
-    // }),
+     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css"
     })
